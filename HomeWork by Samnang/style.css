@@ -1,0 +1,46 @@
+body{
+    margin: auto;
+    padding: auto;
+}
+.container{
+    width: 90%;
+    display: block;
+    margin: 100px auto;
+    background-color: transparent;
+    border-radius: 20px;
+    padding: 10px 10px;
+}
+section{
+    width: 80%;
+    background-color: transparent;
+    border-radius: 10px;
+    margin: 10px  auto;
+}
+article{
+    width: 30%;
+    background-color: white;
+    padding: 10px 10px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-left: 10px;
+    text-align: center;
+}
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em; 
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    color: rgb(0, 89, 255);
+    font-family:"NotoSerifKhmer-Light",serif;
+}
+p {
+    color: rgb(0, 89, 255);
+    font-family: "NotoSerifKhmer-Medium",serif;
+    font-weight: 1;
+}
+i{
+    color:rgb(0, 89, 255);
+}
