@@ -1,79 +1,183 @@
 @import url('https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,300;1,200&display=swap');
+* {
+    
+    font-family: 'Kantumruy Pro', sans-serif;
+    color: darkblue;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
 
-/* navbar */
-.navbar {
+/* Container */
+.container{
     width: 100%;
-    height: 650px;
-    background-image: url('./image/rainbow.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
+    height: auto;
+    background-color: transparent;
+}
+
+/* Sticky */
+.sticky{
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+
+.sticky a{
+    text-decoration: none;
+    color: white;
+}
+
+.sticky a h2{
+    color: white;
+    background-color: black;
+    margin: 0;
+    padding: 30px 0px;
+}
+
+/* Header */
+
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: url("./image/rainbow.jpg");
     background-size: cover;
-
 }
 
-.navbar .container {
+/* Navigator */
+
+nav{
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
-    width: 100%;
-    height: 100%;
-    padding: 20px;
-    overflow: hidden;
+    align-items: center;
 }
 
-.container .greeting {
+
+nav div{
+    width: 50%;
+    height: auto;
+}
+
+nav img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 10px 10px;
+}
+
+/* Nav Box */
+.nav-box{
+    border: 1px solid rgb(0, 0, 129);
+}
+
+/* Head text */
+.head-text{
     width: 100%;
-    height: 100%;
+    height: auto;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: darkblue;
-    font-family: 'Kantumruy Pro', sans-serif;
-}
-.header h1{
-    text-align: center;
-    color: darkblue;
-    font-size: 30px;
-    font-family: 'Kantumruy Pro', sans-serif;
-}
-.header p{
-    margin-top: 10px;
-    text-align: center;
-    font-family: 'Kantumruy Pro', sans-serif;
-    color: darkblue;
-    font-size: 18px;
+    margin-top: 150px;
 }
 
-.header .container {
-    margin-top: 30px;
+.head-text div p{
+    text-align: center;
+    color: rgb(0, 0, 129);
+    font-weight: bold;
+    font-size: 42px;
+    
+}
+
+.head-text div button{
+    font-weight: 700;
+    display: block;
+    background-color: rgb(0, 0, 129);
+    color: white;
+    border: 0;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: auto;
+}
+
+.head-text div button:hover{
+    font-weight: 700;
+    color: rgb(0, 0, 129);
+    background-color: greenyellow;
+}
+
+/* Main Content */
+main{
     width: 100%;
-    height: 300px;
-    /* background-color: hotpink; */
+    height: auto;
+}
+
+section{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.main-text h2{
+    font-size: 35px;
+}
+.main-text{
+    text-align: center;
+    color: rgb(0, 0, 129);
+    font-weight: 700;
+    padding: 10px 10px;
+    font-size: 22px;
+}
+
+.picture{
+    width: 90%;
+    height: auto;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-.section1 {
-    margin-top: 40px;
-    width: 100%;
-    /* background-color: green; */
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: auto;
 }
 
-.section1 {
-    margin-top: 40px;
-    width: 100%;
-    /* background-color: green; */
+.picture img{
+    width: 400px;
+    height: 400px;
+}
+/* About */
+.about{
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 20px auto;
+}
+
+.about div{
+    display: inline-block;
+    text-align: center;
+    margin: 10px 10px;
+}
+
+.about img{
+    width: 400px;
+    height: 350px;
+}
+
+.about-text{
+    width: 300px;
+    color: rgb(0, 0, 129);
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.about-text button{
+    border: 0;
+    color: rgb(0, 0, 129);
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 22px;
 }
 .section1 h1 {
     text-align: center;
-    font-family: 'Kantumruy Pro', sans-serif;
-    color: darkblue;
     font-size: 40px;
-}
-.section1 p {
-    font-family: 'Kantumruy Pro', sans-serif;
-    size: 20px;
 }
 
 .section1 .container{
@@ -89,60 +193,18 @@
 
 .section1 .container .item3 {
     width: 30%;
-    /* background-color: antiquewhite; */
     height: 200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    color: darkblue;
+    font-size: 22px;
+   
 }
-.container .item {
-    width: 25%;
-    height: 250px;
-    box-shadow: 3px 3px 10px 5px black;;
-}
-.item:nth-of-type(1){
-
-    background-image: url('./image/12.jpg');
-}
-
-.item:nth-of-type(2){
-
-    background-image: url('./image/12.jpg');
-}
-
-.item:nth-of-type(3){
-
-    background-image: url('./image/12.jpg');
-}
-.section .item1 {
-    /* background-color: aqua; */
-    width: 25%;
-    height: 500px;
-}
-
-.item1:nth-of-type(1){
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-family: "KantumruyPro-Medium";
-    color: darkblue;
-    font-size: 18px;
-    font-weight: bold;
-    text-align: center;
-
-}
-
-.item1:nth-of-type(2){
-    box-shadow: 3px 3px 10px 5px black;
-    background-image: url('./image/12.jpg');
-}
-
 
 i {
     font-size: 60px;
-    color: darkblue;
+  
 }
 .gallery{
     display: flex;
@@ -150,7 +212,7 @@ i {
 }
 .footer h1 {
     text-align: center;
-    color: darkblue;;
+   
 }
 .image ul {
     display: flex;
@@ -167,3 +229,4 @@ img{
     min-width: 100%;
     object-fit: cover;
 }
+
